@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>shipping projact</title>
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section class="w-3/4 mx-auto">
+			<header>
+				<h1 class="text-5xl py-10 text-green-400 font-bold capitalize">willcome to my Mac projaact</h1>
+			</header>
+			<main class=" py-10">
+				<div class="shipping-section flex gap-x-5 border-b-2 ">
+					<div class="image-fild w-2/4 ">
+						<img id="bigimg" class="" src="images/mac.png" alt="" srcset="">
+					</div>
+					<div class="image-content w-2/4">
+						<div class="content ">
+							<h1 class="text-4xl text-green-200 font-semibold capitalize" id="title">About System Information on your Mac</h1>
+							<p class="pt-3" id="paragrap">The System Information app provides detailed specifications and other information about your Mac hardware and software, including your network and external devices. In some versions of OS X, this app is called System Profiler. </p>
+							<span id="shippingAmount">550$</span>
+							<!-- memory button -->
+							<div class="memory mt-5">
+								<h4 class="text-2xl font-bold py-2">Memory</h4>
+								<div class="tow-btn flext gap-x-5">
+									<button id="memory8btn" class="w-50 border rounded bg-green-100 p-3 text-green-700 font-semibold text-sm">8 GB unifid memory</button>
+									<button id="memory16btn" class="w-50 border rounded bg-green-100 p-3 text-green-700 font-semibold text-sm">16 GB unifid memory</button>
+								</div>
+							</div>
+							<!-- memory button end -->
+							<!-- storeg button start-->
+							<div class="storage mt-5">
+								<h4 class="text-2xl font-bold py-2">Storage</h4>
+								<div class="three-btn flext gap-x-5 ">
+									<button id="storagebtn1" class="w-50 border rounded bg-green-100 p-3 text-green-700 font-semibold text-sm">256 GB SSD Storage</button>
+									<button id="storagebtn2" class="w-50 border rounded bg-green-100 p-3 text-green-700 font-semibold text-sm">512 GB SSD Storage</button>
+									<button id="storagebtn3" class="w-50 border rounded bg-green-100 p-3 text-green-700 font-semibold text-sm">1 TB SSD Storage</button>
+								</div>
+							</div>
+							<!-- storeg button end-->
+							<!-- delivery button start-->
+							<div class="delivery mt-5">
+								<h4 class="text-2xl font-bold py-2">Chose Your Delivery Option</h4>
+								<div class="delivery-btn flext gap-x-5 ">
+									<button id="deliverybtn1" class="w-50 border rounded bg-green-100 p-3 text-green-700 font-semibold text-sm">Friday, Agu 25 Free prime Delivery</button>
+									<button id="deliverybtn2" class="w-50 border rounded bg-green-100 p-3 text-green-700 font-semibold text-sm">Friday, Agu 21 Delivery charge $20</button>
+								</div>
+							</div>
+							<!-- delivery button end-->
+							<!-- invoice table -->
+							<div class="price-table mt-5 py-5">
+								<table class="table-auto font-bold">
+									<tbody>
+										<tr>
+											<td class="w-1/2">Best Price</td>
+											<td class="w-1/2 text-center">$ <span id="best-price">1299</span>
+											</td>
+										</tr>
+										<tr class="">
+											<td class="w-1/2">Extra Memory Cost</td>
+											<td class="w-1/2 text-center">$ <span id="memory-cost">0</span>
+											</td>
+										</tr>
+										<tr>
+											<td class="w-1/2">Extra Storage Cost</td>
+											<td class="w-1/2 text-center">$ <span id="storage-cost">0</span>
+											</td>
+										</tr>
+										<tr>
+											<td class="w-1/2">Delivery Charge</td>
+											<td class="w-1/2 text-center">$ <span id="deliveryCost">0</span>
+											</td>
+										</tr>
+										<tr class="border-t-2 border-black">
+											<td class="w-1/2">Total Price</td>
+											<td class="w-1/2 text-center">$ <span id="totalprice">1299</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- invoice table end-->
+							<!-- promo code submit -->
+							<div class="promo-div mt-5 py-5">
+								<label for="">Add Promo code</label>
+								<br>
+								<input class="border p-1" type="text" id="input" placeholder="Add promo code">
+								<input id="aplaybtn" class="bg-red-600 p-1" type="submit" value="Aplay">
+							</div>
+							<!-- promo code submit end-->
+						</div>
+					</div>
+				</div>
+				<div class="total-price flex">
+					<h2 class="text-2xl font-bold text-center flex-grow">20% Descount Amount :$ <span id="descount">0</span>
+					</h2>
+					<h2 class="text-2xl font-bold flex-grow">Do Paid Total :$ <span id="total">1299</span>
+					</h2>
+				</div>
+			</main>
+		</section>
+		<script src="js/app.js"></script>
+	</body>
+</html>
