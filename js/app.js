@@ -85,5 +85,8 @@ document.getElementById('aplaybtn').addEventListener('click',function(){
       let discuont = totalprice.innerText - promocode;
       total.innerText = discuont;
 
+    }else if(promovalue != 'stevekaku'){
+        document.getElementById('alart').innerText="! Pleas Give Correct Promo Code.";
     }
+    promoinput.value="";
 })
